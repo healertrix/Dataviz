@@ -16,6 +16,12 @@ class MainActivity : AppCompatActivity() {
 
          spinner =findViewById(R.id.spinner)
         button =findViewById(R.id.button)
+    val adapter = ArrayAdapter.createFromResource(this,R.array.csv,android.R.layout.simple_spinner_item)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_item)
+        spinner.adapter = adapter
+
 
     }
 }
+
+
